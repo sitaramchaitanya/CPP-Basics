@@ -1,0 +1,29 @@
+Node* InsertNth(Node *head, int data, int position)
+{
+    int i;
+    Node* temp = head;
+    if(head==NULL)
+    {
+        head = new Node;
+        head->data = data;
+        head->next = NULL;
+    }
+    if(position==0)
+    {
+        temp = new Node;
+        temp->data = data;
+        temp->next = head;
+        head = temp;
+    }
+    else{
+    Node* prev = NULL;
+    for(i=0;i<position;temp = temp->next,i++)
+        prev = temp;
+    Node*insert = new Node;
+    insert->data = data;
+    insert->next = temp;
+    prev->next = insert;
+    
+}
+    return head;
+}
