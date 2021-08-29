@@ -1,3 +1,3 @@
 # CPP-Basics
 
-Long ime no see
+Long time no see
